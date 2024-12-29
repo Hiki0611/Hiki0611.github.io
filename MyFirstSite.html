@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'zbek Taomlari</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>O'zbek Milliy Taomlari</h1>
+    </header>
+
+    <div class="container">
+        <!-- Plov -->
+        <div class="dish">
+            <h2>O'zbekcha Plov</h2>
+            <img src="plov.jpg" alt="O'zbekcha Plov">
+            <div class="dish-buttons">
+                <button onclick="alert('Tayyorlash uchun tugmani bosing!')">Qanday tayyorlash?</button>
+                <button onclick="alert('Bu yerda retsept bor.')">Retsept</button>
+                <button onclick="window.location.href='SSYLKA'">Batafsil</button>
+            </div>
+        </div>
+
+        <!-- Samsa -->
+        <div class="dish">
+            <h2>Samsa</h2>
+            <img src="somsa.jpg" alt="Samsa">
+            <div class="dish-buttons">
+                <button onclick="alert('Tayyorlash uchun tugmani bosing!')">Qanday tayyorlash?</button>
+                <button onclick="alert('Bu yerda retsept bor.')">Retsept</button>
+                <button onclick="window.location.href='SSYLKA'">Batafsil</button>
+            </div>
+        </div>
+
+        <!-- Soup -->
+        <div class="dish">
+            <h2>O'zbekcha Sho'rva</h2>
+            <img src="shurva.jpg" alt="O'zbekcha Sho'rva">
+            <div class="dish-buttons">
+                <button onclick="alert('Tayyorlash uchun tugmani bosing!')">Qanday tayyorlash?</button>
+                <button onclick="alert('Bu yerda retsept bor.')">Retsept</button>
+                <button onclick="window.location.href='SSYLKA'">Batafsil</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Ushbu sahifa Gofurjonov Hikmatullo tomonidan yaratildi!</p>
+    </footer>
+
+    <!-- Плавающая кнопка -->
+    <div class="contact-button" onclick="openModal()">
+        <span>Sahifa egasi</span>
+    </div>
+
+    <!-- Всплывающее окно -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p><strong>Ism:</strong> Hikmatullo Gofurjonov</p>
+            <p><strong>Yosh:</strong> 17</p>
+            <p><strong>Shahar:</strong> Farg`ona</p>
+            <p><strong>Telefon raqami:</strong> +998 99 141 98 36</p>
+        </div>
+    </div>
+
+    <script>
+        // Открытие всплывающего окна
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        // Закрытие всплывающего окна
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+    </script>
+</body>
+</html>
